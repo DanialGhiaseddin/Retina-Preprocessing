@@ -11,8 +11,9 @@ from tqdm import tqdm
 
 def get_args():
     parser = argparse.ArgumentParser(description='DiabeticRetinopathyDetection')
-    parser.add_argument('--images_path', default='./datasets/resized_train_cropped/resized_train_cropped')
-    parser.add_argument('--csv_path', default='./datasets/trainLabels_cropped.csv')
+    parser.add_argument('--images_path',
+                        default='./datasets/diabetic-retinopathy-resized/resized_train_cropped/resized_train_cropped')
+    parser.add_argument('--csv_path', default='./datasets/diabetic-retinopathy-resized/trainLabels_cropped.csv')
     parser.add_argument('--output_path', default='./datasets/diabetic_retinopathy_detection')
     parser.add_argument('--standard_folder', choices=['True', 'False'], default='True')
     parser.add_argument('--random_state', default=42)
